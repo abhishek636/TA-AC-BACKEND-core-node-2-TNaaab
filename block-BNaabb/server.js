@@ -8,11 +8,10 @@ function handleRequest(req, res) {
   req.on("end", () => {
     // console.log("data ends here ");
     // console.log(data);
-    res.setHeader("Content-Type", "text/plain");
     res.write(data);
     res.end();
   });
 }
-server.listen(3333, "localhost", () => {
+server.listen(3456, "localhost", () => {
   console.log("server is listening at 3333 port");
 });
