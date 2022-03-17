@@ -8,7 +8,7 @@ function handleRequest(request, response) {
     let data = "";
     // getting  the body data
     var dataFormat = req.headers['conent-type'];
-    console.log(dataFormat);
+    console.log(dataFormat); 
     request.on("data", (chunk) => {
         data += chunk;
     });
